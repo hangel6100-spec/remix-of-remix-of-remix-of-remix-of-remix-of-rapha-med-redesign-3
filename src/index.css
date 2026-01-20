@@ -235,6 +235,11 @@
     color: hsl(var(--coffee));
   }
 
+  /* Hero text colors - lighter versions for dark backgrounds */
+  .text-hero-green {
+    color: hsl(120 30% 75%); /* Light sage green for dark backgrounds */
+  }
+
   /* Green accent background */
   .bg-forest {
     background-color: hsl(var(--charcoal));

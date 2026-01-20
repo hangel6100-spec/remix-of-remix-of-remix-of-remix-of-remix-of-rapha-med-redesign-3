@@ -64,15 +64,17 @@ export function GlobalReachSection() {
           </ScrollReveal>
 
           {/* Earth Image */}
-          <ScrollReveal delay={0.2} className="relative">
-            <div className="relative aspect-square max-w-lg mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-gold/20 to-transparent rounded-full blur-3xl" />
-              <img
-                src={earthImage}
-                alt="Global distribution network"
-                className="relative z-10 w-full h-full object-cover rounded-2xl shadow-2xl"
-              />
-              <div className="absolute -bottom-4 -right-4 bg-gold/90 text-charcoal px-6 py-3 rounded-xl font-semibold shadow-lg z-20">
+          <ScrollReveal delay={0.2} className="relative flex items-center justify-center">
+            <div className="relative w-full max-w-md lg:max-w-lg">
+              <div className="absolute inset-0 bg-gradient-to-br from-gold/30 to-primary/20 rounded-full blur-3xl scale-110" />
+              <div className="relative z-10 aspect-square w-full overflow-hidden rounded-full border-4 border-gold/30 shadow-2xl">
+                <img
+                  src={earthImage}
+                  alt="Global distribution network"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-accent text-white px-6 py-3 rounded-xl font-semibold shadow-lg z-20 whitespace-nowrap">
                 International Quality Standards
               </div>
             </div>

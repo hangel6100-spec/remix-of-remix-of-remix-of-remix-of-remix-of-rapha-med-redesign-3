@@ -34,9 +34,9 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-lg"
           >
-            Excellence in Medical Care
+            <span className="text-hero-green">Excellence in Medical Care</span>
             <br />
             <span className="text-gold">Starts Here.</span>
           </motion.h1>
@@ -45,7 +45,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg md:text-xl text-white/95 font-medium mb-4 leading-relaxed drop-shadow-md max-w-2xl"
+            className="text-lg md:text-xl text-white font-medium mb-4 leading-relaxed drop-shadow-md max-w-2xl"
           >
             Trusted quality that empowers confident care in every moment— Starts here.
           </motion.p>
@@ -54,7 +54,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="text-base md:text-lg text-white/85 mb-8 leading-relaxed drop-shadow-md max-w-2xl"
+            className="text-base md:text-lg text-hero-green mb-8 leading-relaxed drop-shadow-md max-w-2xl font-medium"
           >
             We supply quality‑driven, carefully tested medical essentials that uphold the highest 
             standards in every clinical setting—so you can deliver uncompromising care to every 
