@@ -2,34 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Rapha Med Design System - Earthy Medical Color Palette */
+/* Rapha Med Design System - Dark Green & Muted Gold Palette */
 
 @layer base {
   :root {
     /* Core Brand Colors */
     --background: 60 12% 95%; /* Light sage-tinted white */
-    --foreground: 78 18% 23%; /* Ebony #414833 */
+    --foreground: 150 30% 15%; /* Dark forest green */
 
     --card: 0 0% 100%;
-    --card-foreground: 78 18% 23%;
+    --card-foreground: 150 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 78 18% 23%;
+    --popover-foreground: 150 30% 15%;
 
-    /* Primary - Dusty Olive */
-    --primary: 82 16% 35%; /* #656d4a */
+    /* Primary - Dark Forest Green */
+    --primary: 150 35% 20%; /* Deep forest green */
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Camel */
-    --secondary: 38 24% 52%; /* #a68a64 */
+    /* Secondary - Muted Gold */
+    --secondary: 42 45% 45%; /* Warm muted gold */
     --secondary-foreground: 0 0% 100%;
 
-    /* Muted - Khaki Beige */
-    --muted: 52 15% 64%; /* #b6ad90 */
-    --muted-foreground: 78 18% 23%;
+    /* Muted - Soft Sage */
+    --muted: 120 10% 75%; /* Soft sage gray */
+    --muted-foreground: 150 25% 25%;
 
-    /* Accent - Coffee Brown */
-    --accent: 30 40% 40%; /* #936639 */
+    /* Accent - Warm Gold (not too bright) */
+    --accent: 42 40% 42%; /* Muted warm gold */
     --accent-foreground: 0 0% 100%;
 
     /* Destructive */
@@ -37,64 +37,64 @@
     --destructive-foreground: 0 0% 100%;
 
     /* UI Elements */
-    --border: 60 8% 83%;
-    --input: 60 8% 83%;
-    --ring: 82 16% 35%;
+    --border: 120 8% 85%;
+    --input: 120 8% 85%;
+    --ring: 150 35% 20%;
 
     --radius: 0.5rem;
 
-    /* Extended Palette */
-    --sage: 70 13% 72%; /* #c2c5aa */
-    --sage-dark: 74 14% 60%; /* #a4ac86 */
-    --charcoal: 90 12% 20%; /* #333d29 */
-    --coffee: 30 40% 40%; /* #936639 */
-    --camel: 38 24% 52%; /* #a68a64 */
-    --khaki: 52 15% 64%; /* #b6ad90 */
-    --ebony: 78 18% 23%; /* #414833 */
+    /* Extended Palette - Dark Green & Gold Theme */
+    --sage: 120 15% 78%; /* Light sage */
+    --sage-dark: 140 18% 55%; /* Medium sage */
+    --charcoal: 150 35% 15%; /* Deep dark green */
+    --coffee: 42 40% 42%; /* Muted gold (accent) */
+    --camel: 42 35% 52%; /* Lighter gold */
+    --khaki: 100 12% 70%; /* Sage khaki */
+    --ebony: 150 30% 18%; /* Dark forest */
 
     /* Hero Section Colors */
-    --hero-primary: 21 48% 19%; /* #452B1F - Deep brown */
-    --hero-accent: 60 99% 16%; /* #525201 - Olive gold */
+    --hero-primary: 150 35% 15%; /* Dark forest green */
+    --hero-accent: 42 45% 45%; /* Muted gold */
 
     /* Sidebar */
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 78 18% 23%;
-    --sidebar-primary: 82 16% 35%;
+    --sidebar-foreground: 150 30% 15%;
+    --sidebar-primary: 150 35% 20%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 70 13% 72%;
-    --sidebar-accent-foreground: 78 18% 23%;
-    --sidebar-border: 60 8% 83%;
-    --sidebar-ring: 82 16% 35%;
+    --sidebar-accent: 120 15% 78%;
+    --sidebar-accent-foreground: 150 30% 15%;
+    --sidebar-border: 120 8% 85%;
+    --sidebar-ring: 150 35% 20%;
   }
 
   .dark {
-    --background: 90 12% 20%;
+    --background: 150 35% 12%;
     --foreground: 60 12% 95%;
 
-    --card: 90 12% 25%;
+    --card: 150 30% 18%;
     --card-foreground: 60 12% 95%;
 
-    --popover: 90 12% 25%;
+    --popover: 150 30% 18%;
     --popover-foreground: 60 12% 95%;
 
-    --primary: 70 13% 72%;
-    --primary-foreground: 90 12% 20%;
+    --primary: 120 15% 78%;
+    --primary-foreground: 150 35% 12%;
 
-    --secondary: 38 24% 52%;
+    --secondary: 42 45% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 82 16% 35%;
-    --muted-foreground: 70 13% 72%;
+    --muted: 150 35% 20%;
+    --muted-foreground: 120 15% 78%;
 
-    --accent: 30 40% 40%;
+    --accent: 42 40% 42%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 82 16% 35%;
-    --input: 82 16% 35%;
-    --ring: 70 13% 72%;
+    --border: 150 35% 20%;
+    --input: 150 35% 20%;
+    --ring: 120 15% 78%;
   }
 }
 
@@ -131,8 +131,8 @@
   .hero-overlay {
     background: linear-gradient(
       135deg,
-      hsla(var(--charcoal), 0.7) 0%,
-      hsla(var(--primary), 0.5) 100%
+      hsla(var(--charcoal), 0.75) 0%,
+      hsla(var(--primary), 0.6) 100%
     );
   }
 
@@ -143,7 +143,7 @@
 
   .product-card:hover {
     @apply shadow-xl -translate-y-1;
-    border-color: hsl(var(--sage-dark));
+    border-color: hsl(var(--coffee));
   }
 
   /* Navigation Styles */
@@ -228,6 +228,16 @@
   /* Trust Badge */
   .trust-badge {
     @apply flex items-center gap-3 bg-black/40 backdrop-blur-sm rounded-xl px-5 py-4 border border-white/10;
+  }
+
+  /* Gold accent text */
+  .text-gold {
+    color: hsl(var(--coffee));
+  }
+
+  /* Green accent background */
+  .bg-forest {
+    background-color: hsl(var(--charcoal));
   }
 }
 
