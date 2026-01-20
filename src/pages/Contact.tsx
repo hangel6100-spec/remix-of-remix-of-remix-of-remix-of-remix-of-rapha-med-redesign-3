@@ -48,14 +48,14 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="py-16 md:py-20 bg-primary">
+      <section className="py-12 md:py-16 bg-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <span className="text-sage font-medium mb-3 block">Contact Us</span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <span className="text-sage font-medium mb-2 block text-sm">Contact Us</span>
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
               Get in Touch
             </h1>
-            <p className="text-xl text-sage/90">
+            <p className="text-lg text-sage/90">
               Have questions about our products or services? Our team is here to help. 
               Reach out and we'll respond within 24 hours.
             </p>
@@ -64,14 +64,14 @@ const Contact = () => {
       </section>
 
       {/* Contact Content */}
-      <section className="py-16 md:py-20">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-3 gap-10">
             {/* Contact Info */}
             <div className="lg:col-span-1">
-              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+              <h2 className="text-xl font-bold mb-5">Contact Information</h2>
               
-              <div className="space-y-6">
+              <div className="space-y-5">
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-sage/30 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-primary" />

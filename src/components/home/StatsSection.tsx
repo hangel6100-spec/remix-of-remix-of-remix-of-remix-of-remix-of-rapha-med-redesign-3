@@ -14,9 +14,9 @@ export function StatsSection() {
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   return (
-    <section className="py-16 bg-primary" ref={ref}>
+    <section className="py-10 md:py-12 bg-primary" ref={ref}>
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -25,8 +25,8 @@ export function StatsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
-              <p className="stat-number mb-2">{stat.value}</p>
-              <p className="text-sage/90 text-sm md:text-base font-medium tracking-wide uppercase">{stat.label}</p>
+              <p className="stat-number mb-1">{stat.value}</p>
+              <p className="text-sage/90 text-xs md:text-sm font-medium tracking-wide uppercase">{stat.label}</p>
             </motion.div>
           ))}
         </div>

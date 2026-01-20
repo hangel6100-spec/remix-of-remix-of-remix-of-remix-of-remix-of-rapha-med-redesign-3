@@ -39,7 +39,7 @@ const About = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 bg-primary overflow-hidden">
+      <section className="relative py-14 md:py-18 bg-primary overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-sage rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-charcoal rounded-full blur-3xl" />
@@ -47,12 +47,12 @@ const About = () => {
         
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
-            <span className="text-sage font-medium mb-4 block">About Rapha Med</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <span className="text-sage font-medium mb-3 block text-sm">About Rapha Med</span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
               Committed to Care.<br />
               Built on Trust.
             </h1>
-            <p className="text-xl text-sage/90 leading-relaxed">
+            <p className="text-lg text-sage/90 leading-relaxed">
               For over two decades, Rapha Med has been a trusted partner for healthcare facilities 
               worldwide, providing quality medical disposables and supplies that healthcare 
               professionals rely on every day.
@@ -62,15 +62,15 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
             <div>
-              <span className="text-coffee font-medium mb-3 block">Our Story</span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <span className="text-coffee font-medium mb-2 block text-sm">Our Story</span>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Two Decades of Healthcare Excellence
               </h2>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <div className="space-y-3 text-muted-foreground leading-relaxed text-sm md:text-base">
                 <p>
                   Founded in 2003, Rapha Med began with a simple mission: to provide healthcare 
                   facilities with reliable, high-quality medical supplies at competitive prices. 
@@ -88,9 +88,9 @@ const About = () => {
                   service, and innovation continues to drive everything we do.
                 </p>
               </div>
-              <Link to="/contact" className="btn-primary inline-flex items-center gap-2 mt-8">
+              <Link to="/contact" className="btn-primary inline-flex items-center gap-2 mt-6 text-sm">
                 Partner With Us
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
             <div className="relative">
@@ -99,9 +99,9 @@ const About = () => {
                 alt="Rapha Med Team"
                 className="rounded-xl shadow-card-hover"
               />
-              <div className="absolute -bottom-6 -left-6 bg-coffee text-white p-6 rounded-xl shadow-lg">
-                <p className="text-3xl font-bold">20+</p>
-                <p className="text-sm opacity-90">Years of Excellence</p>
+              <div className="absolute -bottom-4 -left-4 bg-coffee text-white p-4 rounded-xl shadow-lg">
+                <p className="text-2xl font-bold">20+</p>
+                <p className="text-xs opacity-90">Years of Excellence</p>
               </div>
             </div>
           </div>
@@ -109,26 +109,26 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 md:py-28 section-sage">
+      <section className="py-12 md:py-16 section-sage">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-card p-8 md:p-10 rounded-xl shadow-card">
-              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                <Target className="w-7 h-7 text-primary" />
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="bg-card p-6 md:p-8 rounded-xl shadow-card">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-xl font-bold mb-3">Our Mission</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 To provide healthcare facilities with reliable, high-quality medical supplies 
                 that enable better patient care. We are committed to being a trusted partner 
                 that healthcare professionals can depend on for their essential medical product needs.
               </p>
             </div>
-            <div className="bg-card p-8 md:p-10 rounded-xl shadow-card">
-              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                <Eye className="w-7 h-7 text-primary" />
+            <div className="bg-card p-6 md:p-8 rounded-xl shadow-card">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                <Eye className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-xl font-bold mb-3">Our Vision</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 To be the global leader in medical supply distribution, recognized for our 
                 unwavering commitment to quality, innovation, and customer service. We envision 
                 a world where every healthcare facility has access to the supplies they need.
@@ -139,26 +139,26 @@ const About = () => {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-coffee font-medium mb-3 block">Our Values</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-coffee font-medium mb-2 block text-sm">Our Values</span>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">
               What Drives Us Forward
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-base">
               Our core values guide every decision we make and every relationship we build.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value) => (
               <div key={value.title} className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-sage rounded-full flex items-center justify-center">
-                  <value.icon className="w-8 h-8 text-primary" />
+                <div className="w-14 h-14 mx-auto mb-4 bg-sage rounded-full flex items-center justify-center">
+                  <value.icon className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-muted-foreground">{value.description}</p>
+                <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
+                <p className="text-muted-foreground text-sm">{value.description}</p>
               </div>
             ))}
           </div>
@@ -166,25 +166,25 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 md:py-28 section-khaki">
+      <section className="py-12 md:py-16 section-khaki">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-coffee font-medium mb-3 block">Our Journey</span>
-            <h2 className="text-3xl md:text-4xl font-bold">Company Milestones</h2>
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-coffee font-medium mb-2 block text-sm">Our Journey</span>
+            <h2 className="text-2xl md:text-3xl font-bold">Company Milestones</h2>
           </div>
 
           <div className="max-w-3xl mx-auto">
             {milestones.map((milestone, index) => (
-              <div key={milestone.year} className="flex gap-6 pb-8 relative">
+              <div key={milestone.year} className="flex gap-4 pb-6 relative">
                 {index !== milestones.length - 1 && (
-                  <div className="absolute left-5 top-10 w-0.5 h-full bg-border" />
+                  <div className="absolute left-4 top-8 w-0.5 h-full bg-border" />
                 )}
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0 z-10">
+                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 z-10">
                   <span className="text-white text-xs font-bold">{milestone.year.slice(2)}</span>
                 </div>
-                <div className="bg-card p-4 rounded-lg shadow-card flex-1">
-                  <p className="font-semibold text-coffee mb-1">{milestone.year}</p>
-                  <p className="text-muted-foreground">{milestone.event}</p>
+                <div className="bg-card p-3 rounded-lg shadow-card flex-1">
+                  <p className="font-semibold text-coffee mb-1 text-sm">{milestone.year}</p>
+                  <p className="text-muted-foreground text-sm">{milestone.event}</p>
                 </div>
               </div>
             ))}
@@ -193,18 +193,18 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Work Together?</h2>
-          <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Work Together?</h2>
+          <p className="text-muted-foreground text-base mb-6 max-w-2xl mx-auto">
             Join thousands of healthcare facilities that trust Rapha Med for their medical supply needs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/products" className="btn-primary inline-flex items-center justify-center gap-2">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link to="/products" className="btn-primary inline-flex items-center justify-center gap-2 text-sm">
               Explore Products
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link to="/contact" className="px-6 py-3 font-medium rounded-md border-2 border-ebony text-ebony hover:bg-ebony hover:text-white transition-all duration-300">
+            <Link to="/contact" className="px-5 py-3 font-medium rounded-md border-2 border-ebony text-ebony hover:bg-ebony hover:text-white transition-all duration-300 text-sm">
               Contact Us
             </Link>
           </div>

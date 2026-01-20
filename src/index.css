@@ -235,9 +235,21 @@
     color: hsl(var(--coffee));
   }
 
-  /* Hero text colors - lighter versions for dark backgrounds */
+  /* Hero text colors - dark emerald with white shadow for readability */
   .text-hero-green {
-    color: hsl(120 30% 75%); /* Light sage green for dark backgrounds */
+    color: hsl(152 50% 18%); /* Dark emerald green */
+    text-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.9),
+      0 0 40px rgba(255, 255, 255, 0.7),
+      2px 2px 4px rgba(255, 255, 255, 0.8);
+  }
+
+  /* Brown/tan for secondary hero text */
+  .text-hero-brown {
+    color: hsl(32 40% 35%); /* Warm brown */
+    text-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.9),
+      0 0 40px rgba(255, 255, 255, 0.7);
   }
 
   /* Green accent background */

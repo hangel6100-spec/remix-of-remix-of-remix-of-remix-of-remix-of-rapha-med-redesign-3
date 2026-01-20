@@ -50,22 +50,22 @@ const products = [
 
 export function ProductsGrid() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-12 md:py-16">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <ScrollReveal className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-coffee font-medium mb-3 block">Our Products</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <ScrollReveal className="text-center max-w-2xl mx-auto mb-10">
+          <span className="text-coffee font-medium mb-2 block text-sm">Our Products</span>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Comprehensive Solutions for Every Healthcare Challenge
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base">
             From emergency response to routine patient care, RaphaMed provides the medical supplies 
             your team depends on—every single day.
           </p>
         </ScrollReveal>
 
         {/* Products Grid */}
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product) => (
             <motion.div key={product.title} variants={staggerItem}>
               <Link
@@ -79,14 +79,14 @@ export function ProductsGrid() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-coffee transition-colors">
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold mb-2 group-hover:text-coffee transition-colors">
                     {product.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground text-sm mb-3">
                     {product.description}
                   </p>
-                  <span className="inline-flex items-center gap-2 text-coffee font-medium">
+                  <span className="inline-flex items-center gap-2 text-coffee font-medium text-sm">
                     View Products
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </span>
@@ -97,10 +97,10 @@ export function ProductsGrid() {
         </StaggerContainer>
 
         {/* CTA */}
-        <ScrollReveal className="text-center mt-12" delay={0.3}>
-          <Link to="/products" className="btn-primary inline-flex items-center gap-2">
+        <ScrollReveal className="text-center mt-8" delay={0.3}>
+          <Link to="/products" className="btn-primary inline-flex items-center gap-2 text-sm">
             View All Products
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </ScrollReveal>
       </div>

@@ -16,16 +16,17 @@ export function HeroSection() {
       <div className="absolute inset-0 hero-overlay" />
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 py-20">
+      <div className="relative container mx-auto px-4 py-16 md:py-20">
         <div className="max-w-3xl">
+          {/* Trust Badge - Moved up with tighter spacing */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-white/95 backdrop-blur-sm rounded-full mb-4"
           >
             <Shield className="w-4 h-4 text-primary" />
-            <span className="text-sm font-semibold text-primary">
+            <span className="text-xs md:text-sm font-semibold text-primary">
               Trusted by healthcare facilities across Canada and beyond
             </span>
           </motion.div>
@@ -34,18 +35,18 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-lg"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight"
           >
             <span className="text-hero-green">Excellence in Medical Care</span>
             <br />
-            <span className="text-gold">Starts Here.</span>
+            <span className="text-gold" style={{ textShadow: '0 0 20px rgba(255,255,255,0.9), 0 0 40px rgba(255,255,255,0.7), 2px 2px 4px rgba(255,255,255,0.8)' }}>Starts Here.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg md:text-xl text-white font-medium mb-4 leading-relaxed drop-shadow-md max-w-2xl"
+            className="text-base md:text-lg text-white font-medium mb-3 leading-relaxed drop-shadow-md max-w-2xl"
           >
             Trusted quality that empowers confident care in every moment— Starts here.
           </motion.p>
@@ -54,7 +55,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="text-base md:text-lg text-hero-green mb-8 leading-relaxed drop-shadow-md max-w-2xl font-medium"
+            className="text-sm md:text-base text-hero-green mb-6 leading-relaxed max-w-2xl font-medium"
           >
             We supply quality‑driven, carefully tested medical essentials that uphold the highest 
             standards in every clinical setting—so you can deliver uncompromising care to every 
@@ -68,18 +69,18 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-3"
           >
             <Link
               to="/products"
-              className="btn-primary inline-flex items-center justify-center gap-2 text-lg"
+              className="btn-primary inline-flex items-center justify-center gap-2 text-base"
             >
               Explore Our Solutions
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               to="/contact"
-              className="btn-outline inline-flex items-center justify-center gap-2 text-lg"
+              className="btn-outline inline-flex items-center justify-center gap-2 text-base"
             >
               Request a Quote
             </Link>
@@ -90,33 +91,33 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-16 flex flex-wrap gap-6"
+            className="mt-10 flex flex-wrap gap-4"
           >
             <div className="trust-badge bg-white/90 backdrop-blur-sm">
-              <div className="p-3 bg-primary/20 rounded-full">
-                <Shield className="w-6 h-6 text-primary" />
+              <div className="p-2 bg-primary/20 rounded-full">
+                <Shield className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-primary font-bold text-lg">ISO Certified</p>
-                <p className="text-primary/70 text-sm">Quality Assured</p>
+                <p className="text-primary font-bold text-sm md:text-base">ISO Certified</p>
+                <p className="text-primary/70 text-xs">Quality Assured</p>
               </div>
             </div>
             <div className="trust-badge bg-white/90 backdrop-blur-sm">
-              <div className="p-3 bg-primary/20 rounded-full">
-                <Award className="w-6 h-6 text-primary" />
+              <div className="p-2 bg-primary/20 rounded-full">
+                <Award className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-primary font-bold text-lg">20+ Years</p>
-                <p className="text-primary/70 text-sm">Industry Experience</p>
+                <p className="text-primary font-bold text-sm md:text-base">20+ Years</p>
+                <p className="text-primary/70 text-xs">Industry Experience</p>
               </div>
             </div>
             <div className="trust-badge bg-white/90 backdrop-blur-sm">
-              <div className="p-3 bg-primary/20 rounded-full">
-                <Heart className="w-6 h-6 text-primary" />
+              <div className="p-2 bg-primary/20 rounded-full">
+                <Heart className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-primary font-bold text-lg">10K+ Partners</p>
-                <p className="text-primary/70 text-sm">Healthcare Facilities</p>
+                <p className="text-primary font-bold text-sm md:text-base">10K+ Partners</p>
+                <p className="text-primary/70 text-xs">Healthcare Facilities</p>
               </div>
             </div>
           </motion.div>
@@ -124,9 +125,9 @@ export function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 rounded-full border-2 border-white/70 flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-white/70 rounded-full" />
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-5 h-8 rounded-full border-2 border-white/70 flex items-start justify-center p-1.5">
+          <div className="w-1 h-2 bg-white/70 rounded-full" />
         </div>
       </div>
     </section>

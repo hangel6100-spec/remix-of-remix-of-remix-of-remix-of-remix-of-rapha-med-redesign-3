@@ -37,33 +37,33 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-20 md:py-28 section-sage">
+    <section className="py-12 md:py-16 section-sage">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <ScrollReveal className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-coffee font-medium mb-3 block">Why Choose Us</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <ScrollReveal className="text-center max-w-2xl mx-auto mb-10">
+          <span className="text-coffee font-medium mb-2 block text-sm">Why Choose Us</span>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Why Healthcare Professionals Choose RaphaMed
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base">
             We believe quality medical supplies strengthen the hands of those who care. Every product, 
             every partnership, every delivery reflects our commitment to excellence.
           </p>
         </ScrollReveal>
 
         {/* Features Grid */}
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature) => (
             <motion.div
               key={feature.title}
               variants={staggerItem}
-              className="bg-card p-8 rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300"
+              className="bg-card p-6 rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300"
             >
-              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                <feature.icon className="w-7 h-7 text-primary" />
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                <feature.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </StaggerContainer>
