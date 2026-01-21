@@ -10,12 +10,12 @@ import nitrileGlovesImg from '@/assets/product-nitrile-gloves.jpg';
 import ivSuppliesImg from '@/assets/product-iv-supplies.jpg';
 import labTestingImg from '@/assets/product-lab-testing.jpg';
 import vaccineVialImg from '@/assets/product-vaccine-vial.jpg';
-import medicalDrawerImg from '@/assets/product-medical-drawer.jpg';
 import sterilizationImg from '@/assets/product-sterilization.jpg';
 import woundImg from '@/assets/product-wound.jpg';
 import bandagesImg from '@/assets/product-bandages.jpg';
 import gownsImg from '@/assets/product-gowns.jpg';
 import scalpelImg from '@/assets/product-scalpel.jpg';
+import dentalBibImg from '@/assets/product-dental-bib.jpg';
 
 const categories = [
   { id: 'all', name: 'All Products' },
@@ -133,7 +133,7 @@ const products = [
     name: 'Dental Bibs',
     category: 'consumables',
     description: 'Disposable patient bibs for dental and medical procedures.',
-    image: medicalDrawerImg,
+    image: dentalBibImg,
     featured: false,
     certifications: ['FDA Registered', 'Waterproof (Poly-Backed)', '2-Ply Tissue + 1-Ply Poly', 'Latex-Free', 'Individually Wrapped'],
     sizes: 'Sizes: 13"x18" (Standard), 17"x18" (Large), 18"x25" (XL), 29"x35" (Full)',

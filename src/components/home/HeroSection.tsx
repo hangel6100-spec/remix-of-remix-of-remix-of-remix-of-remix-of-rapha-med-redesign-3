@@ -6,13 +6,13 @@ import heroImage from '@/assets/hero-medical.jpg';
 export function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center">
-      {/* Background Image */}
+      {/* Background Image - positioned to show more white/left side */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-right bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
 
-      {/* Overlay */}
+      {/* Overlay - lighter on left for text visibility */}
       <div className="absolute inset-0 hero-overlay" />
 
       {/* Content */}
@@ -37,24 +37,15 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight"
           >
-            <span className="text-hero-green">Excellence in Medical Care</span>
+            <span className="text-hero-green">Trusted quality that empowers confident care in every moment—</span>
             <br />
-            <span className="text-gold" style={{ textShadow: '0 0 20px rgba(255,255,255,0.9), 0 0 40px rgba(255,255,255,0.7), 2px 2px 4px rgba(255,255,255,0.8)' }}>Starts Here.</span>
+            <span className="text-gold" style={{ textShadow: '0 0 20px rgba(255,255,255,0.9), 0 0 40px rgba(255,255,255,0.7), 2px 2px 4px rgba(255,255,255,0.8)' }}>Starts here.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-base md:text-lg text-white font-medium mb-3 leading-relaxed drop-shadow-md max-w-2xl"
-          >
-            Trusted quality that empowers confident care in every moment— Starts here.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
             className="text-sm md:text-base text-hero-green mb-6 leading-relaxed max-w-2xl font-medium"
           >
             We supply quality‑driven, carefully tested medical essentials that uphold the highest 
