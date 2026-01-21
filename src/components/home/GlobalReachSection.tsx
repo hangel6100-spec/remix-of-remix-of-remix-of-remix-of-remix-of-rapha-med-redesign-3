@@ -31,8 +31,8 @@ export function GlobalReachSection() {
         zIndex: -1
       }} />
         <div className="absolute inset-0 bg-gradient-to-b from-forest/80 via-transparent to-forest/60" />
-        <div className="absolute inset-0 flex items-start justify-center pt-6 md:pt-10">
-          <h2 className="text-gold md:text-4xl lg:text-5xl font-bold drop-shadow-lg text-5xl mb-0 mt-0 pt-0 pb-0 text-left">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h2 className="text-gold text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-lg text-center">
             Global Outreach
           </h2>
         </div>
