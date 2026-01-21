@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="absolute inset-0 hero-overlay" />
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 py-16 md:py-20 opacity-95">
+      <div className="relative container mx-auto px-4 py-16 md:py-20 opacity-95 -mt-12">
         <div className="max-w-3xl">
           {/* Trust Badge - Moved up with tighter spacing */}
           <motion.div initial={{
