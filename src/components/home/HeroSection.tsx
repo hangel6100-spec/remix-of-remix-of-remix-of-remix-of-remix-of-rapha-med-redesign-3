@@ -5,8 +5,9 @@ import heroImage from '@/assets/hero-medical.jpg';
 export function HeroSection() {
   return <section className="relative min-h-[90vh] flex items-center">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url(${heroImage})`
+      <div className="absolute inset-0 bg-cover bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`,
+      backgroundPosition: 'calc(50% + 4in) center'
     }} />
 
       {/* Overlay */}
