@@ -94,11 +94,16 @@ const About = () => {
               </Link>
             </div>
             <div className="relative">
-              <img
-                src={teamImage}
-                alt="Rapha Med Team"
-                className="rounded-xl shadow-card-hover"
-              />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="rounded-xl shadow-card-hover w-full"
+              >
+                <source src="/videos/world-distribution.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
               <div className="absolute -bottom-4 -left-4 bg-coffee text-white p-4 rounded-xl shadow-lg">
                 <p className="text-2xl font-bold">20+</p>
                 <p className="text-xs opacity-90">Years of Excellence</p>

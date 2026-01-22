@@ -22,20 +22,25 @@ const certifications = ['ISO 13485', 'CE Marked', 'FDA Registered', 'GMP Certifi
 
 export function Footer() {
   return (
-    <footer className="section-charcoal">
+    <footer className="section-charcoal -mt-36">
       {/* Newsletter Section */}
       <div className="border-b border-primary/30">
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-white mb-3">Stay Updated</h3>
-            <p className="text-sage/80 mb-6">
+            <h3 className="text-3xl font-bold text-white mb-3">Stay Updated</h3>
+            <p className="text-sage/80 mb-4 text-lg">
               Subscribe to our newsletter for the latest product updates and healthcare insights.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <p className="text-sage/70 mb-6 text-base">
+              All inquiries and newsletter updates will be sent to: <a href="mailto:info@Raphamedinc.com" className="text-gold hover:text-coffee transition-colors">info@Raphamedinc.com</a>
+            </p>
+            <form action="mailto:info@Raphamedinc.com" method="post" encType="text/plain" className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
+                name="email"
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-3 rounded-md bg-white/10 border border-sage/30 text-white placeholder:text-sage/60 focus:outline-none focus:border-coffee"
+                required
               />
               <button type="submit" className="btn-primary whitespace-nowrap">
                 Subscribe

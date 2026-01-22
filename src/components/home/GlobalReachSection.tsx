@@ -23,10 +23,10 @@ const globalStats = [{
 
 export function GlobalReachSection() {
   return (
-    <section className="py-12 md:py-16 bg-forest text-white overflow-hidden rounded-none shadow-none border-0">
+    <section className="py-12 md:py-16 bg-forest text-white overflow-hidden rounded-none shadow-none border-0 -mt-24">
       {/* Section Header - Outside Video */}
       <div className="container mx-auto px-4 mb-6">
-        <h2 className="text-gold text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+        <h2 className="text-gold text-4xl md:text-5xl lg:text-6xl font-bold text-center">
           Global Outreach
         </h2>
       </div>
@@ -51,10 +51,10 @@ export function GlobalReachSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <ScrollReveal>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Delivering Excellence Worldwide
             </h3>
-            <p className="text-sage/90 text-base mb-6 leading-relaxed">
+            <p className="text-sage/90 text-lg mb-6 leading-relaxed">
               From North America to emerging markets across the globe, RaphaMed's medical supplies 
               reach healthcare professionals who need them most. Our international distribution 
               network ensures reliable delivery of quality-certified products, meeting the highest 
