@@ -34,8 +34,7 @@ export function GlobalReachSection() {
       {/* Full-width Video Background */}
       <div className="relative w-full h-64 md:h-80 lg:h-96 mb-10">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
-          <source src="/videos/global-reach-video.mov" type="video/quicktime" />
-          <source src="/videos/global-reach-video.mp4" type="video/mp4" />
+          <source src="/videos/licensed-revised.mp4" type="video/mp4" />
         </video>
         {/* Fallback image if video doesn't load */}
         <img 
