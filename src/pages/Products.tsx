@@ -4,7 +4,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { Search, Filter, ArrowRight, CheckCircle } from 'lucide-react';
 
 // Import HD product images
-import surgicalGlovesImg from '@/assets/product-surgical-gloves.jpg';
+import surgicalGlovesImg from '@/assets/product-nitrile-gloves-box.jpg';
 import n95MasksImg from '@/assets/product-n95-masks.jpg';
 import nitrileGlovesImg from '@/assets/product-nitrile-gloves.jpg';
 import ivSuppliesImg from '@/assets/product-iv-supplies.jpg';
